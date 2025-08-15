@@ -2,6 +2,7 @@
 Calculator functions
 """
 
+
 def add(x: float, y: float) -> float:
     """
     Add two numbers.
