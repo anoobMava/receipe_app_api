@@ -1,4 +1,4 @@
-version: "3.9"
+#version: "3.9"
 
 services:
   app:
@@ -18,7 +18,7 @@ services:
       - DB_HOST=db
       - DB_NAME=devdb
       - DB_USER=devuser
-      - DB_PASS=changeme
+      - DB_PASS=changem
     depends_on:
       - db
 
@@ -27,7 +27,7 @@ services:
     restart: always
     environment:
       - POSTGRES_USER=devuser
-      - POSTGRES_PASSWORD=changeme
+      - POSTGRES_PASSWORD=changem
       - POSTGRES_DB=devdb
     volumes:
       - db_data:/var/lib/postgresql/data
